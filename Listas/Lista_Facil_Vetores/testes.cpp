@@ -432,6 +432,8 @@ int main()
     teste_maior();
     teste_soma_maior_menor();
     teste_copiar();
+    teste_soma_elementos();
+    teste_existe();
     teste_num_repet();
     teste_sao_iguais();
     teste_elem_comum();

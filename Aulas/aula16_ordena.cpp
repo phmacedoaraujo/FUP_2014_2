@@ -3,7 +3,7 @@
 using namespace std;
 
 int ordena(int v[], int tam) {
-	int i,menor,posmenor,inicial=0;
+	int i,aux,menor,posmenor,inicial=0;
         for(inicial=0;inicial<tam;inicial++) {
 	  	menor=v[inicial];
 		posmenor=inicial;
@@ -23,16 +23,16 @@ int main()
 {
    int i;
    int v[4];
-   int res[4];
    for(i=0;i<4;i++) {
       cout << "Digite o valor do elemento " << i << endl;
       cin >> v[i];
    }
-   inverte(v,4,res);
-   for(i=0;i<4;i++) cout << "v[" << i << "] = " << res[i] << endl;
-   
+   ordena(v,4);
+   for(i=0;i<4;i++) cout << "v[" << i << "] = " << v[i] << endl;
+
    return 0;
 }
+
 
 
 

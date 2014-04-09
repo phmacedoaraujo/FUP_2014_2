@@ -47,7 +47,7 @@ void test_valor_maximo4()
 
 void test_a_esta_meio()
 {
-    t.open("a_esta_meio", 1);
+    t.open("a_esta_meio", 2);
     t.add(a_esta_meio(2,6,5) == false);
     t.add(a_esta_meio(6,5,9) == true);
     t.add(a_esta_meio(87,12,100) == true);
@@ -68,7 +68,7 @@ void test_resto_divisao()
 
 void test_resto_divisao_maior()
 {
-    t.open("resto_divisao", 1);
+    t.open("resto_divisao_maior", 1);
     t.add(resto_divisao(5,2) == 1);
     t.add(resto_divisao(10,3) == 1);
     t.add(resto_divisao(3,5) == 3);
@@ -120,7 +120,7 @@ void test_eh_sobra31_div5()
 void test_eh_par_n46()
 {
 
-    t.open("eh_par_n46", 2);
+    t.open("eh_par_n46", 1);
     t.add(eh_par_n46(10) == true);
     t.add(eh_par_n46(14) == true);
     t.add(eh_par_n46(22) == true);
@@ -132,7 +132,7 @@ void test_eh_par_n46()
 void test_satisfaz_situacao()
 {
 
-    t.open("satisfaz_situacao", 1);
+    t.open("satisfaz_situacao", 2);
     t.add(satisfaz_situacao(199, 0) == 1);
     t.add(satisfaz_situacao(55,-2) == 0);
     t.add(satisfaz_situacao(-9, 35) == 0);
@@ -165,7 +165,7 @@ void test_operacao()
 
 void test_operacao2()
 {
-    t.open("operacao2", 1);
+    t.open("operacao2", 2);
     t.add(operacao2(4,2) == 0);
     t.add(operacao2(5,3) == 5);
     t.add(operacao2(8,5) == 12);
@@ -176,7 +176,7 @@ void test_operacao2()
 
 void test_ambos_3_ou_ambos_5()
 {
-    t.open("ambos_3_ou_ambos_5",1);
+    t.open("ambos_3_ou_ambos_5",2);
     t.add(ambos_3_ou_ambos_5(9,27) == true);
     t.add(ambos_3_ou_ambos_5(100,20) == true);
     t.add(ambos_3_ou_ambos_5(35,10) == true);
@@ -188,7 +188,7 @@ void test_ambos_3_ou_ambos_5()
 void test_restos_iguais( )
 {
 
-    t.open("restos_iguais",2);
+    t.open("restos_iguais",1);
     t.add(restos_iguais(10,3,8,7) == true );
     t.add(restos_iguais(3,3,5,5) == true);
     t.add(restos_iguais(18,5,19,4) == true);
@@ -199,7 +199,7 @@ void test_restos_iguais( )
 
 void test_div_35()
 {
-t.open("div35",1);
+t.open("div35",2);
     t.add(div_35(3) == 1 );
     t.add(div_35(6) == 1);
     t.add(div_35(10) == 2);
@@ -217,23 +217,19 @@ test_valor_maximo3();
 test_valor_maximo4();
 test_a_esta_meio();
 test_resto_divisao();
-test_resto_divisao();
+test_resto_divisao_maior();
 test_eh_par();
 test_eh_mult3();
 test_eh_mult();
 test_eh_sobra31_div5();
-test_eh_par_n46();
 test_eh_par_n46();
 test_satisfaz_situacao();
 test_modulo();
 test_operacao();
 test_operacao2();
 test_ambos_3_ou_ambos_5();
-test_ambos_3_ou_ambos_5();
 test_restos_iguais();
 test_div_35();
-
-
 t.total();
   return 0;
 }

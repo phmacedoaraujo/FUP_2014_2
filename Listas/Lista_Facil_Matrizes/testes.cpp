@@ -155,10 +155,10 @@ void test_troca_valores()
                 t.add(mat[0][1]==1);
                 t.add(mat[0][2]==1);
                 t.add(mat[0][3]==0);
-                t.add(mat[0][0]==1);
-                t.add(mat[1][0]==1);
-                t.add(mat[2][0]==1);
-                t.add(mat[3][0]==1);
+                t.add(mat[0][3]==1);
+                t.add(mat[1][3]==1);
+                t.add(mat[2][3]==1);
+                t.add(mat[3][3]==1);
     }
     t.close();
 }

@@ -1,5 +1,6 @@
 //TITULO   Matrizes
 //BOLSISTA Erivelton Facundo
+#include <stdio.h>
 
 //HB
 #include <iostream>
@@ -111,13 +112,12 @@ return 0;
 /*Q Troca valores Q*/
 
 /*T
-Receba uma matriz 4 x 4 e troque os valores da 1ª.linha pelos da 4ª.coluna, vice-e-versa.
+Receba uma matriz 4 x 4 e troque os valores da 1ª linha pelos da 4ª linha, vice-e-versa.
 
  T*/
 //CB
 void troca_valores(int matriz[4][4])
 {
-
 }
 //CE
 

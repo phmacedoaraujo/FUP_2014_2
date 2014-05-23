@@ -23,6 +23,7 @@ int main()
    if(p == NULL) cout << "Elemento não existe no vetor" << endl;
    else cout << "Endereco = " << p << endl;
    if(p != NULL) cout << *(p+1) << endl;
+   delete [] v;
    
    return 0;
 }

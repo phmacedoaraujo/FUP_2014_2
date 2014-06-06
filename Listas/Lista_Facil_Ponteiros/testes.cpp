@@ -258,7 +258,7 @@ void testa_quais_quadrantes(){
         Ponto p={0,2};
         quais_quadrantes(p,&q);
         int aux=false;
-        if(q.quad[0] == true &&  q.quad[1] == true && q.quad[2] == false && q.quad[3] == false)
+        if(q.quad[0] == true &&  q.quad[1] == false && q.quad[2] == false && q.quad[3] == true)
             aux=true;
         t.add(aux);
     }
@@ -551,12 +551,12 @@ void testa_make_matriz(){
                 (strcmp(&matriz[4][0],e) == false));
     }
     {
-        char palavra[]="passaros cantam, cantam atÃ© morrerem";
+        char palavra[]="passaros cantam, cantam até morrerem";
         char **matriz=make_matriz(palavra);
         char a[]="passaros";
         char b[]="cantam,";
         char c[]="cantam";
-        char d[]="atÃ©";
+        char d[]="até";
         char e[]="morrerem";
         t.add( (strcmp(&matriz[0][0],a) == false) && (strcmp(&matriz[1][0],b) == false) &&
                 (strcmp(&matriz[2][0],c) == false) && (strcmp(&matriz[3][0],d) == false) &&

@@ -38,7 +38,7 @@ void teste_multiplicacao(){
 	{
 		begin(1);
 		int res=multiplicacao(5,10);
-		t.add(begin(0) >=10 && res == 50);
+		t.add(begin(0) >=5 && res == 50);
 	}
 	t.close();
 }
@@ -372,14 +372,14 @@ void teste_converter_min_mai(){
 		char str[]="sddsAsB";
 		char aux[]="SDDSASB";
 		converter_min_mai(str);
-		t.add(begin(0) >= 3 && strcmp(str,aux) == 0); 
+		t.add(begin(0) >= 3 && strcmp(str,aux) == 0);
 	}
 	{
 		begin();
 		char str[]="sddsAsB";
 		char aux[]="SdDSASB";
 		converter_min_mai(str);
-		t.add(begin(0) >= 3 && strcmp(str,aux) != 0); 
+		t.add(begin(0) >= 3 && strcmp(str,aux) != 0);
 	}
 	t.close();
 }

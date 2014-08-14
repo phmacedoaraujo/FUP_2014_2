@@ -69,10 +69,10 @@ void test_resto_divisao()
 void test_resto_divisao_maior()
 {
     t.open("resto_divisao_maior", 1);
-    t.add(resto_divisao(5,2) == 1);
-    t.add(resto_divisao(10,3) == 1);
-    t.add(resto_divisao(3,5) == 3);
-    t.add(resto_divisao(4,6) == 2);
+    t.add(resto_divisao_maior(5,2) == 1);
+    t.add(resto_divisao_maior(10,3) == 1);
+    t.add(resto_divisao_maior(3,5) == 2);
+    t.add(resto_divisao_maior(4,6) == 2);
     t.close();
 }
 
